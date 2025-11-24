@@ -79,9 +79,7 @@ body {
   display: flex;
   align-items: center;
   padding: 4rem 0;
-  background:
-    radial-gradient(circle at top left, #601cfc22, transparent 55%),
-    radial-gradient(circle at bottom right, #601cfc33, transparent 55%);
+  background: radial-gradient(circle at top left, #601cfc22, transparent 55%), radial-gradient(circle at bottom right, #601cfc33, transparent 55%);
 }
 
 .hero-overlay {
@@ -185,7 +183,7 @@ body {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .section-title {
@@ -208,15 +206,15 @@ body {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
   background-color: #0f0f1e;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(96, 28, 252, 0.2);
-  padding: 1.75rem;
+  padding: 1.25rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -271,6 +269,22 @@ body {
 .experience-section {
   background-color: #050510;
 }
+.experience-section .cards-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+.experience-section .card {
+  padding: 0.9rem;
+  border-radius: 8px;
+}
+.experience-section .card-title {
+  font-size: 1.1rem;
+}
+.experience-section .card-meta,
+.experience-section .card-text,
+.experience-section .card-list li {
+  font-size: 0.9rem;
+}
 
 .contact-section {
   background-color: #0b0b16;
@@ -278,15 +292,15 @@ body {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 .contact-card {
   background-color: #0f0f1e;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid rgba(96, 28, 252, 0.2);
-  padding: 1.75rem;
+  padding: 1.25rem;
 }
 
 .contact-list {
